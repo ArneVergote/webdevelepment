@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-
+<p>Het HTML-fragment dat je hebt gegeven, heeft een structuurprobleem. Hier is wat er mis is:</p>
+<p>Het probleem is dat je een ol (geordende lijst) element nest binnen een ul (ongeordende lijst) element, wat niet correct is volgens de HTML-structuur. Een geordende lijst hoort niet genest te zijn binnen een ongeordende lijst.
+    Als je een geneste lijst wilt maken, moet je de geordende lijst buiten de ongeordende lijst plaatsen, zoals in dit voorbeeld:</p>
+<p><ul>
+    <li>een</li>
+    <li>twee</li>
+    <li>
+        <ol>
+            <li>jan</li>
+            <li>piet</li>
+            <li>joris</li>
+        </ol>
+    </li>
+    <li>vier</li>
+</ul>
+</p>
+<p>In dit aangepaste fragment is de geordende lijst (ol) nu correct genest binnen een lijstitem (li) van de ongeordende lijst (ul). Hierdoor wordt de geneste lijst correct weergegeven binnen de hoofdlijst.</p>
 </body>
 </html>
